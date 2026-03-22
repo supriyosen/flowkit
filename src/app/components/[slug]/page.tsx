@@ -11,15 +11,19 @@ import FinancialDashboard from '@/components/library/financial-dashboard/index';
 import { financialDashboardCode } from '@/components/library/financial-dashboard/code';
 import CalendarWidget from '@/components/library/calendar-widget/index';
 import { calendarWidgetCode } from '@/components/library/calendar-widget/code';
+import SalesReportCards from '@/components/library/sales-report-cards/index';
+import { salesReportCardsCode } from '@/components/library/sales-report-cards/code';
 
 const componentMap: Record<string, React.ComponentType> = {
   'financial-analytics-dashboard': FinancialDashboard,
   'calendar-widget': CalendarWidget,
+  'sales-report-cards': SalesReportCards,
 };
 
 const codeMap: Record<string, string> = {
   'financial-analytics-dashboard': financialDashboardCode,
   'calendar-widget': calendarWidgetCode,
+  'sales-report-cards': salesReportCardsCode,
 };
 
 interface PageProps {
