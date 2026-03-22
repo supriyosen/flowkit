@@ -12,6 +12,10 @@ const componentMap = {
     () => import('@/components/library/calendar-widget/index'),
     { ssr: false }
   ),
+  'sales-report-cards': dynamic(
+    () => import('@/components/library/sales-report-cards/index'),
+    { ssr: false }
+  ),
 } as const;
 
 interface LivePreviewProps {
